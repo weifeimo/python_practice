@@ -1,6 +1,5 @@
 """
  https://yukicoder.me/problems/no/207
-
 A以上B以下の整数のうち、3の倍数および3の付く数を、
 小さい順に出力してください。なお、「3の付く数」とは、
 10進数表記にした時、少なくとも1つの桁が3であるような数のことです。
@@ -54,3 +53,11 @@ while valid_B == False:
     else:
         continue
 
+num = set()
+for i in range(a, b + 1):
+    if i % 3 == 0 or '3' in str(i):
+        num.add(i)
+
+print(f"\n{a:,}以上{b:,}以下の整数のうち、3の倍数および3の付く数は以下の通りです。")
+for i in sorted(num):
+    print(i)
