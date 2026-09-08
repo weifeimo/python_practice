@@ -1,3 +1,5 @@
+#### #mark before print lines can be removed to understand the program esilly.
+
 def Input_checker_1(x, y):
     if x > y:
         #print("\nA≤Bが必須です。AとBを再入力してください。\n")
@@ -38,7 +40,7 @@ else:
 
 
 #####3の倍数および3の付く数を抽出
-# print(f"\n{a:,}以上{b:,}以下の整数のうち、3の倍数および3の付く数は以下の通りです。")
+#print(f"\n{a:,}以上{b:,}以下の整数のうち、3の倍数および3の付く数は以下の通りです。")
 for i in range(a, b + 1):
     if i % 3 == 0 or '3' in str(i):
         result.append(i)
