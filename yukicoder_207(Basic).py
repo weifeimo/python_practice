@@ -18,7 +18,7 @@ def input_func():
     return [a, b]
 
 
-# print("整数A、Bの値を入力してください。\n半角スペースで区切ってください。（A≤B）\n")
+#print("整数A、Bの値を入力してください。\n半角スペースで区切ってください。（A≤B）\n")
 
 Input_checked = False
 valid_AB = input_func()
