@@ -23,7 +23,7 @@ def Input_value_checker(x):
 
 def Input_distance_checker(x):
     if b - a >= 100:
-        print("\2AとBの差が大きすぎます。\n差が100以下の値を再入力してください。\n")
+        print("\nAとBの差が大きすぎます。\n差が100以下の値を再入力してください。\n")
         y = False
     else:
         y = True
