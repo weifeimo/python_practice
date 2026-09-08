@@ -8,6 +8,13 @@ D個までしか食べられません。 idsigmaさんは今日，野菜を最�
 '''
 a, b, c, d = map(int, input().split())
 
+e = d // (c + 1)
+print(e if e <= a and e * c <= b else min(a, b // c))
+
+'''
+# another solution
+a, b, c, d = map(int, input().split())
+
 count = 0
 for i in range(a + 1):
     if i * c > b or i + i * c > d:
@@ -15,3 +22,5 @@ for i in range(a + 1):
     else:
       count = i
 print(count)
+
+'''
