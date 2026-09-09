@@ -1,16 +1,16 @@
 a, b, c, d, e = map(int, input().split())
 
 card_sets = set([a, b, c, d, e])
-card = sorted([a, b, c, d, e]) #card = Cards sorted list
+card = sorted([a, b, c, d, e])      #card = cards_sorted_list
 
-def Full_house_checker():
+def full_house_checker():
     if card[0] == card[3] or card[1] == card[4]:
         print("NO HAND")
     else:
         print("FULL HOUSE")
     return
 
-def Three_card_checker():
+def three_card_checker():
     if card[0] == card[2] or card[1] == card[3] or card[2] == card[4]:
         print("THREE CARD")
     else:
@@ -18,9 +18,9 @@ def Three_card_checker():
     return
 
 if len(card_sets) == 2:
-    Full_house_checker()
+    full_house_checker()
 elif len(card_sets) == 3:
-    Three_card_checker()
+    three_card_checker()
 elif len(card_sets) == 4:
     print("ONE PAIR")
 else:
