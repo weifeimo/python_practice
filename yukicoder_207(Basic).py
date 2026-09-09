@@ -12,7 +12,7 @@ def input_checker_2(x, y):
     return True
 
 def input_func():
-    input_num = list(int(x) for x in input().split())
+    input_num = [int(i) for i in input().split()]
     a = input_num[0]
     b = input_num[1]
     return [a, b]
@@ -20,20 +20,20 @@ def input_func():
 
 print("整数A、Bの値を入力してください。\n半角スペースで区切ってください。（A≤B）\n")
 
-Input_checked = False
+input_checked = False
 valid_ab = input_func()
 a = valid_ab[0]
 b = valid_ab[1]
 result = []
 
 #入力値チェック
-Input_checked = input_checker_1(a, b)
+input_checked = input_checker_1(a, b)
 
-if Input_checked == False:
+if input_checked == False:
     a, b = input_func()
 else:
-    Input_checked = input_checker_2(a, b)
-    if Input_checked == False:
+    input_checked = input_checker_2(a, b)
+    if input_checked == False:
         a, b = input_func()
 
 
